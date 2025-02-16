@@ -1,0 +1,15 @@
+{
+    "name": "Dev Container",
+    "image": "mcr.microsoft.com/vscode/devcontainers/base:0-ubuntu-20.04",
+    "features": {
+        "docker-from-docker": "latest"
+    },
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "extensions": [
+        "ms-vscode.cpptools",
+        "ms-azuretools.vscode-docker"
+    ],
+    "postCreateCommand": "apt-get update && apt-get install -y git"
+}
